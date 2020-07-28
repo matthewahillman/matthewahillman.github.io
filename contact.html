@@ -5,8 +5,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>Matthew Hillman - Web Designer / Front End Developer</title>
   <meta name="description" content="" />
-  <meta name="keywords" content="swindon web design, wiltshire, wiltshire web design, wroughton web design, web design, website design, web designers, web design agency, web development, wordpress, content management system, responsive design, mobile website, web design company"
-  />
+  <meta name="keywords"
+    content="swindon web design, wiltshire, wiltshire web design, wroughton web design, web design, website design, web designers, web design agency, web development, wordpress, content management system, responsive design, mobile website, web design company" />
   <meta name="author" content="humans.txt" />
   <meta name="msvalidate.01" content="8F574D0BEA678F4B303C6387A0AC6B76" />
   <meta name="google-site-verification" content="c4B4lZaf2l6JvwowwoCAg-Lt3yZ-ilxF4aEZm7sX-7M" />
@@ -23,11 +23,10 @@
       <div class="row">
         <div class="col">
           <nav class="navbar navbar-expand-md sticky-top navbar-dark" style="background: #1b1d2a;">
-            <a class="navbar-brand" href="#">
-                MH</a>
+            <a class="navbar-brand" href="#"> MH</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -96,23 +95,16 @@
               <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
               <div class="help-block with-errors"></div>
             </div>
-
             <div class="form-group">
               <div class="g-recaptcha" data-sitekey="6LeneRATAAAAADEATb1pmfdUHvcTgQvETut2Szzc" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
               <input class="form-control d-none" data-recaptcha="true" required="required" data-error="Please complete the Captcha">
               <div class="help-block with-errors"></div>
             </div>
-
-            <input type="submit" class="btn btn-dark btn-send" value="Send message">
-
+            <button class="g-recaptcha btn btn-dark btn-send" data-sitekey="6LcgNbcZAAAAAFdvaaDshg-LYmxokqegKhKhX4f4" data-callback='onSubmit' data-action='submit'>Submit</button>
             <p class="text-muted py-4">
-              <strong>*</strong> These fields are required.
-            </p>
-
+              <strong>*</strong> These fields are required. </p>
           </div>
-
         </form>
-
       </div>
     </div>
   </div>
@@ -120,11 +112,10 @@
     <div class="container py-4">
       <div class="row">
         <div class="col text-center">
-          <h3>Let's chat over a coffee?
-              <a href="contact.html">
-                <button type="button" class="btn btn-secondary btn-sm yellow">Contact Us</button>
-              </a>
-            </h3>
+          <h3>Let's chat over a coffee? <a href="contact.html">
+              <button type="button" class="btn btn-secondary btn-sm yellow">Contact Us</button>
+            </a>
+          </h3>
         </div>
       </div>
     </div>
@@ -134,33 +125,24 @@
       <div class="row">
         <div class="col">
           <p>
-            <i class="fas fa-envelope" aria-hidden="true"></i> hello@matthewhillman.co.uk
-          </p>
+            <i class="fas fa-envelope" aria-hidden="true"></i> fluidnessltd@gmail.com</p>
         </div>
-        <div class="col text-right">
-          &copy; 2018 Matthew Hillman. All Rights Reserved.
-        </div>
+        <div class="col text-right"> &copy; 2020 Matthew Hillman. All Rights Reserved. </div>
       </div>
     </div>
   </footer>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-116658316-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag()
+    function onSubmit(token)
     {
-      dataLayer.push(arguments);
+      document.getElementById("contact-form").submit();
     }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-116658316-1');
   </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script src="js/validator.js"></script>
   <script src="js/contact.js"></script>
 </body>
